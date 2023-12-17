@@ -4,7 +4,7 @@
 https://github.com/maldiharyojudanto/football-clip-analysis-flask-yolov8/assets/76139419/41a9adf7-aa21-4e57-9dec-6348e2b60758
 
 ## Sistem desain
-
+![sistemdesainflask](https://github.com/maldiharyojudanto/football-clip-analysis-flask-yolov8/assets/76139419/212943f0-2a42-474e-8d75-9866dce1ec41)
 Aplikasi football-clip-analysis-flask-yolov8 dapat **mendeteksi player (beserta warna jersey), bola, ball possession, dan passing** menggunakan model **Yolov8 dan traditional rule based** yang telah diintegrasikan dengan **framework Flask**.
 
 ## Keterangan file .py :
