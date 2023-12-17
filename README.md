@@ -1,5 +1,9 @@
 # football-clip-analysis-flask-yolov8
 
+## Demo
+
+## Sistem desain
+
 Aplikasi football-clip-analysis-flask-yolov8 dapat **mendeteksi player (beserta warna jersey), bola, ball possession, dan passing** menggunakan model **Yolov8 dan traditional rule based** yang telah diintegrasikan dengan **framework Flask**.
 
 ## Keterangan file .py :
@@ -28,7 +32,7 @@ Aplikasi football-clip-analysis-flask-yolov8 dapat **mendeteksi player (beserta 
     - Input dataset yang sudah dianotasi (dari roboflow)
     - Output model deteksi objek best.pt
 
-## Keterangan model .pt yang telah di-train (link model terdapat di [petunjuk pemakaian](https://github.com/maldiharyojudanto/football-scouting-v1/tree/main?tab=readme-ov-file#petunjuk-pemakaian-)) :
+## Keterangan model .pt yang telah di-train (link model terdapat di [petunjuk pemakaian](https://github.com/maldiharyojudanto/football-clip-analysis-flask-yolov8?tab=readme-ov-file#petunjuk-pemakaian-)) :
 1. 'soccer-detection-v2-best-n-200-aug'
     - soccer-detection-v2 : Dataset yang diambil dari roboflow
     - best : Model yang terbaik hasil training
@@ -98,7 +102,7 @@ Aplikasi football-clip-analysis-flask-yolov8 dapat **mendeteksi player (beserta 
 3. Buat folder 'weights' di root foolder
 4. Download weights di [sini](https://drive.google.com/drive/folders/14HF1AErJAaSnmk8jtjDufTEiVnECrVBZ?usp=sharing)
 5. Paste hasil download ke folder 'weights' yang sudah dibuat sebelumnya
-6. Download video untuk dilakukan prediksi (link dataset di [bawah](https://github.com/maldiharyojudanto/football-scouting-v1/tree/main?tab=readme-ov-file#link-dataset-))
+6. Download video untuk dilakukan prediksi (link dataset di [bawah](https://github.com/maldiharyojudanto/football-clip-analysis-flask-yolov8?tab=readme-ov-file#link-dataset-))
 7. Ekstrak video untuk dilakukan prediksi/testing
 8. Jalankan file dengan perintah 'python app.py'
 9. Aplikasi berjalan di localhost:8000 atau 127.0.0.1:8000 (bisa diatur di app.py)
