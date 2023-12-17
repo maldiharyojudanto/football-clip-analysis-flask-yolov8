@@ -1,6 +1,7 @@
 # football-clip-analysis-flask-yolov8
 
 ## Demo
+https://github.com/maldiharyojudanto/football-clip-analysis-flask-yolov8/assets/76139419/41a9adf7-aa21-4e57-9dec-6348e2b60758
 
 ## Sistem desain
 
