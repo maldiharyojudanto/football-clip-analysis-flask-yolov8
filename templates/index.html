@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inference  Inference Football Clip Analysis - Flask & YOLOv8</title>
+    <style>
+        video {
+            width: 60% !important;
+            height: 60% !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inference Football Football Clip Analysis - Flask & YOLOv8</h1>
+    <p>Select a video then enter the number of frames that you want to do inference or prediction from the video (for example: 50, then frames 0 to 49 will be selected)</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept=".mp4*"  id='videoUpload'>
+        <input type="number" name="numberframe" placeholder="Number of Frames" min="1">
+        <input onclick="myFunction()" type="submit" value="Inference">
+    </form>
+    <br>
+    <video style="display:none" controls autoplay>
+        Your browser does not support the video tag
+    </video>
+
+    <script>
+        function myFunction() {
+          alert("Do you want to continue? The inference process takes time, so please be patient");
+        }
+
+        document.getElementById("videoUpload").onchange = function(event) {
+            let file = event.target.files[0];
+            let blobURL = URL.createObjectURL(file);
+            document.querySelector("video").style.display = 'block'
+            document.querySelector("video").src = blobURL;
+        }
+    </script>
+</body>
+</html>

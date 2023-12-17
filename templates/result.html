@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Clip Analysis Inference Result</title>
+    <style>
+        video {
+            width: 60% !important;
+            height: 60% !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Football Clip Analysis Inference Result</h1>
+    <p>The result of inference or prediction and post-processing of {{video_name}}, which is taken as {{jumlah_frame}} frames</p>
+    <video controls autoplay>
+        <source src="{{url_for('static', filename='output/videos/playerball/football-scouting-best-m-1695-aug-segonlyplayer.pt/' + video_name + ' output.mp4')}}" type="video/mp4">
+    </video>
+</body>
+</html>
